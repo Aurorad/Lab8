@@ -11,3 +11,109 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+h1 h2 h3 h4 h5 h6 {
+  text-align: center;
+}
+
+
+.header {
+  margin: 15px 0 25px 0;
+}
+
+
+.N {/*0*/
+  transform: rotate(0deg);
+}
+.NtO {/*1*/
+  transform: rotate(11.25deg);
+}
+.NNO {/*2 */
+  transform: rotate(22.5deg);
+}
+.NOtN {/*3*/
+  transform: rotate(33.75deg);
+}
+.NO {/*4*/
+  transform: rotate(45deg);
+}
+.NOtO {/*5*/
+  transform: rotate(56.25deg);
+}
+.ONO {/*6*/
+  transform: rotate(67.5deg);
+}
+.OtN {/*7*/
+  transform: rotate(78.75deg);
+}
+.O {/*8*/
+  transform: rotate(90deg);
+}
+.OtS {/*9*/
+  transform: rotate(101.25deg);
+}
+.OSO {/*10*/
+  transform: rotate(112.50deg);
+}
+.SOtO {/*11*/
+  transform: rotate(123.75deg);
+}
+.SO {/*12*/
+  transform: rotate(135deg);
+}
+.SOtS {/*13*/
+  transform: rotate(146.25deg);
+}
+.SSO {/*14*/
+  transform: rotate(157.50deg);
+}
+.StO {/*15*/
+  transform: rotate(168.75deg);
+}
+.S {/*16*/
+  transform: rotate(180deg);
+}
+.StW {/*17*/
+  transform: rotate(191.25deg);
+}
+.SSW {/*18*/
+  transform: rotate(202.50deg);
+}
+.SWtS {/*19*/
+  transform: rotate(213.75deg);
+}
+.SW {/*20*/
+  transform: rotate(225deg);
+}
+.SWtW {/*21*/
+  transform: rotate(236.25deg);
+}
+.WSW {/*22*/
+  transform: rotate(247.50deg);
+}
+.WtS {/*23*/
+  transform: rotate(258.75deg);
+}
+.W {/*24*/
+  transform: rotate(270deg);
+}
+.WtN {/*25*/
+  transform: rotate(281.25deg);
+}
+.WNW {/*26*/
+  transform: rotate(292.50deg);
+}
+.NWtW {/*27*/
+  transform: rotate(303.75deg);
+}
+.NW {/*28d*/
+  transform: rotate(315deg);
+}
+.NWtN {/*29*/
+  transform: rotate(326.25deg);
+}
+.NNW {/*30*/
+  transform: rotate(337.50deg);
+}
+.NtW {/*31*/
+  transform: rotate(348.75deg);
+}

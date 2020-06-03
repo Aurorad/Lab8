@@ -36,10 +36,9 @@ export  class Login extends React.Component {
         let error = "";
         if(Authorization.isAuthorized === false) error = "There is no user with such parameters. Please try again";
         return (
-            <div className="block">
-
-                <form className="container mt-2" onSubmit={this.handleSubmit}>
-                    <h2 className="text-info ">Log to Web App</h2>
+            <div>
+                <form className="container mt-md-5 col-md-6" onSubmit={this.handleSubmit}>
+                    <h1 className="text-info">Log to Web App</h1>
                     <div className="form-group">
                         <label>E-mail:</label>
                         <input name="email" className="form-control" type="email"  onChange={this.handleInputChange} required/>

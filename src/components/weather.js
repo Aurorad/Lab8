@@ -1,7 +1,13 @@
 import React from 'react';
 import moment from "moment";
-import icon from './icon.png';
-
+import wind_direction_icon from './wi-direction-up.svg';
+import max_temp_icon from './wi-thermometer.svg';
+import min_temp_icon from './wi-thermometer-exterior.svg';
+import celsius_icon from './wi-celsius.svg';
+import barometer_icon from './wi-barometer.svg';
+import humidity_icon from './wi-humidity.svg';
+import sunrise_icon from './wi-sunrise.svg';
+import sunset_icon from './wi-sunset.svg';
 
 class Weather extends React.Component {
     constructor(props) {
@@ -51,8 +57,8 @@ class Weather extends React.Component {
                        </div>
                         <div className=" align-self-md-end header">
                             <p className="mb-0">Time: {time}</p>
-                            <p className="mb-0">Sunrise: {sun_rise}</p>
-                            <p className="mb-0">Sunset: {sun_set}</p>
+                            <p className="mb-0"><img src={sunrise_icon} alt="Sunrise"/>: {sun_rise}</p>
+                            <p className="mb-0"><img src={sunset_icon} alt="Sunset"/>: {sun_set}</p>
                         </div>
                    </header>
                     <div className="container-fluid row ml-0">
@@ -76,20 +82,24 @@ function OneDay(day) {
         <div className="col-md-2">
             <h5 className="text-info">{day.day.applicable_date}</h5>
             <p>{day.day.weather_state_name}</p>
-            <p>Max: {Math.round(day.day.max_temp)}</p>
-            <p>Min: {Math.round(day.day.min_temp)}</p>
-            <p>Wind:{ <Compas direction={day.day.wind_direction_compass}/> }{day.day.wind_direction_compass} {Math.round(day.day.wind_speed)} mph</p>
-            <p>Air pressure: {Math.round(day.day.air_pressure)}</p>
-            <p>Humidity: {day.day.humidity}%</p>
+            <p>
+                <img src={max_temp_icon} alt="Max temp"/>: {Math.round(day.day.max_temp)}
+                <img src={celsius_icon} alt="degrees Celsius"/>
+            </p>
+            <p>
+                <img src={min_temp_icon} alt="Min temp"/>: {Math.round(day.day.min_temp)}
+                <img src={celsius_icon} alt="degrees Celsius"/>
+            </p>
+            <p>{<Compas direction={day.day.wind_direction_compass}/> }{day.day.wind_direction_compass} {Math.round(day.day.wind_speed)} mph</p>
+            <p><img src={barometer_icon} alt="Air pressure"/> : {Math.round(day.day.air_pressure)}</p>
+            <p><img src={humidity_icon} alt="Humidity"/>: {day.day.humidity}%</p>
             <p>Visibility: {Math.round(day.day.visibility)} miles</p>
         </div>
     );
 }
 function Compas(direction) {
-   //console.log(direction.direction);
     let className = direction.direction;
-
     return (
-        <img className={className} src={icon}  />
+         <img className={className} src={wind_direction_icon} alt={className}/>
     );
 }

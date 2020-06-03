@@ -1,72 +1,79 @@
 body {
+
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  font-size: 20px;
+  background-color: #61dafb;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+div {
 
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-h1 h2 h3 h4 h5 h6 {
-  text-align: center;
-}
+
+
 
 
 .header {
   margin: 15px 0 25px 0;
 }
 
-
+img {
+  width: 40px;
+  height: 40px;
+}
 .N {/*0*/
   transform: rotate(0deg);
 }
-.NtO {/*1*/
+.NtO, .NtE {/*1*/
   transform: rotate(11.25deg);
 }
-.NNO {/*2 */
+.NNO, .NNE{/*2 */
   transform: rotate(22.5deg);
 }
-.NOtN {/*3*/
+.NOtN, .NEtN{/*3*/
   transform: rotate(33.75deg);
 }
-.NO {/*4*/
+.NO, .NE{/*4*/
   transform: rotate(45deg);
 }
-.NOtO {/*5*/
+.NOtO, .NEtE{/*5*/
   transform: rotate(56.25deg);
 }
-.ONO {/*6*/
+.ONO, .ENE{/*6*/
   transform: rotate(67.5deg);
 }
-.OtN {/*7*/
+.OtN, .EtN{/*7*/
   transform: rotate(78.75deg);
 }
-.O {/*8*/
+.O, .E{/*8*/
   transform: rotate(90deg);
 }
-.OtS {/*9*/
+.OtS, .EtS{/*9*/
   transform: rotate(101.25deg);
 }
-.OSO {/*10*/
+.OSO, .ESE{/*10*/
   transform: rotate(112.50deg);
 }
-.SOtO {/*11*/
+.SOtO, .SEtE{/*11*/
   transform: rotate(123.75deg);
 }
-.SO {/*12*/
+.SO, .SE{/*12*/
   transform: rotate(135deg);
 }
-.SOtS {/*13*/
+.SOtS, .SEtS{/*13*/
   transform: rotate(146.25deg);
 }
-.SSO {/*14*/
+.SSO, .SSE{/*14*/
   transform: rotate(157.50deg);
 }
-.StO {/*15*/
+.StO, .StE{/*15*/
   transform: rotate(168.75deg);
 }
 .S {/*16*/

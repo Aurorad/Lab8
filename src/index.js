@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Switch, Route, Redirect} from "react-router-dom";
 import './index.css';
-//import App from './App';
+import bootstrap from "bootstrap/dist/css/bootstrap.css";
 import * as serviceWorker from './serviceWorker';
-import {Login, Authorization} from "./cmponents/login";
-import Weather from "./cmponents/weather";
+import {Login, Authorization} from "./components/login";
+import Weather from "./components/weather";
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
     <Route {...rest} render={(props) => (
